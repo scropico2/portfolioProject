@@ -1,0 +1,50 @@
+@use "../abstracts/variables";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 36px;
+
+  &__logo {
+    text-decoration: none;
+  }
+
+  &__mark {
+    display: inline;
+    padding: 12px 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 28px;
+    background: linear-gradient(135deg, #373e60, #7a677e);
+    border-radius: 12px;
+    color: #ffffff;
+  }
+
+  &__name {
+    display: inline;
+    padding: 12px 20px;
+    font-size: 24px;
+    font-size: 700;
+    color: #ffffff;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  padding: 12px 20px;
+
+  &__link {
+    text-decoration: none;
+    padding: 8px 12px;
+    color: #b4b2b5;
+    transition:
+      transform 0.25s ease,
+      color 0.25s ease;
+
+    &:hover {
+      color: #ffffff;
+      transform: translateY(-4px);
+    }
+  }
+}

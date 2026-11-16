@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 36px;
+}
+.header__logo {
+  text-decoration: none;
+}
+.header__mark {
+  display: inline;
+  padding: 12px 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  background: linear-gradient(135deg, #373e60, #7a677e);
+  border-radius: 12px;
+  color: #ffffff;
+}
+.header__name {
+  display: inline;
+  padding: 12px 20px;
+  font-size: 24px;
+  font-size: 700;
+  color: #ffffff;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+  padding: 12px 20px;
+}
+.nav__link {
+  text-decoration: none;
+  padding: 8px 12px;
+  color: #b4b2b5;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.nav__link:hover {
+  color: #ffffff;
+  transform: translateY(-4px);
+}
+
+body {
+  font-family: "Bricolage Grotesque", system-ui, sans-serif;
+  background: #13151b;
+}
