@@ -159,6 +159,90 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
+.section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 48px;
+  max-width: 1200px;
+  padding: 0 36px;
+  margin: 0 auto 120px;
+  scroll-margin-top: 40px;
+}
+.section__title {
+  margin: 0;
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: #f2f2f5;
+}
+
+.about {
+  max-width: 720px;
+}
+.about p {
+  margin: 0 0 28px;
+  font-size: 22px;
+  line-height: 1.65;
+  color: #f2f2f5;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-self: start;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  background: #1a1f2b;
+}
+.skill__icon {
+  flex: none;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.skill__icon--terminal {
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+}
+.skill b {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  color: #f2f2f5;
+}
+.skill span {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 900px) {
+  .section {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}
 body {
   font-family: "Bricolage Grotesque", system-ui, sans-serif;
   background: #13151b;
