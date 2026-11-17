@@ -1,0 +1,17 @@
+@keyframes wave-flow {
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes wave-pulse {
+  0%,
+  100% {
+    transform: scaleY(0.6);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scaleY(1.3);
+    opacity: 1;
+  }
+}

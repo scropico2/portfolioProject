@@ -1,0 +1,43 @@
+.wave {
+  position: absolute;
+  left: 36px; // same as the header's side padding
+  right: 36px;
+  bottom: -80px; // fills the 80px gap under the header
+  height: 80px;
+  pointer-events: none;
+
+  &__svg {
+    display: block;
+    width: 100%; // must be 100%, not 200%
+    height: 100%;
+    overflow: visible;
+    // no animation here
+  }
+
+  &__svg path {
+    fill: none;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+    transform-box: view-box; // scale around the SVG's center line
+    transform-origin: 50% 50%;
+  }
+
+  &__main {
+    stroke: url(#waveGrad);
+    stroke-width: 2.5;
+    animation: wave-pulse 3s ease-in-out infinite;
+  }
+
+  &__ghost {
+    stroke: #fff;
+    stroke-width: 1;
+    stroke-opacity: 0.25;
+  }
+
+  &__ghost--a {
+    animation: wave-pulse 4s ease-in-out infinite reverse;
+  }
+  &__ghost--b {
+    animation: wave-pulse 5s ease-in-out infinite 0.5s;
+  }
+}

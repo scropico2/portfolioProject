@@ -24,6 +24,38 @@
         <a class="nav__link" href="projects.html">Projects</a>
         <a class="nav__link" href="contacts.html">Contacts</a>
       </nav>
+      <div class="wave">
+        <svg class="wave__svg" viewBox="0 0 1200 100" preserveAspectRatio="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="waveGrad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="0">
+              <stop offset="0%" stop-color="#b9b4ee" />
+              <stop offset="50%" stop-color="#ffffff" />
+              <stop offset="100%" stop-color="#b9b4ee" />
+            </linearGradient>
+          </defs>
+
+          <path class="wave__ghost wave__ghost--a" d="M0,50 Q150,36 300,50 T600,50 T900,50 T1200,50" />
+          <path class="wave__ghost wave__ghost--b" d="M0,50 Q150,64 300,50 T600,50 T900,50 T1200,50" />
+          <path class="wave__main" d="M0,50 Q150,80 300,50 T600,50 T900,50 T1200,50" />
+        </svg>
+      </div>
     </header>
+    <div class="hero">
+      <div class="heroCard">
+        <h2 class="heroCard__title">Simas Cicėnas</h2>
+        <p class="heroCard__text">
+          Junior JavaScript developer in Vilnius. I came to code from film sets and live events, so deadlines and
+          teamwork are nothing new.
+        </p>
+        <div class="heroCard_fields">
+          <small>Role</small>
+          <b>JuniorDeveloper</b>
+        </div>
+        <div>
+          <small>Based in</small>
+          <b>Vilnius, Lithuania</b>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
